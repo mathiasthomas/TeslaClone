@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Tesla Clone</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <div class="header" id="header">
         <nav>
@@ -15,7 +17,7 @@
                 <li><a href="#" id="models">Model S</a></li>
                 <li><a href="#" id="modelx">Model X</a></li>
                 <li><a href="#" id="modely">Model Y</a></li>
-                
+
             </ul>
             <a href="#" class="btn">Reverse Now</a>
         </nav>
@@ -38,27 +40,28 @@
             <div>
                 <h2 id="model">Model S</h2>
             </div>
-    </div>
+        </div>
+        <!--commet   -->
+        <script>
+            var header = document.getElementById("header");
+            var ms = document.getElementById("models");
+            var mx = document.getElementById("modelx");
+            var my = document.getElementById("modely");
+            var model = document.getElementById("model");
 
-    <script>
-        var header = document.getElementById("header");
-        var ms = document.getElementById("models");
-        var mx = document.getElementById("modelx");
-        var my = document.getElementById("modely");
-        var model = document.getElementById("model");
-
-        ms.onclick = function(){
-            header.style.backgroundImage = "url(images/image-1.png)";
-            model.innerHTML = "Model S";
-        }
-        mx.onclick = function(){
-            header.style.backgroundImage = "url(images/image-4.png)";
-            model.innerHTML = "Model X";
-        }
-        my.onclick = function(){
-            header.style.backgroundImage = "url(images/image-3.png)";
-            model.innerHTML = "Model Y";
-        }
-    </script>
+            ms.onclick = function () {
+                header.style.backgroundImage = "url(images/image-1.png)";
+                model.innerHTML = "Model S";
+            }
+            mx.onclick = function () {
+                header.style.backgroundImage = "url(images/image-4.png)";
+                model.innerHTML = "Model X";
+            }
+            my.onclick = function () {
+                header.style.backgroundImage = "url(images/image-3.png)";
+                model.innerHTML = "Model Y";
+            }
+        </script>
 </body>
+
 </html>
